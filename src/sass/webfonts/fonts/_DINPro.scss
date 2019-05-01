@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'DINPro';
+	src: url('#{$path-to-fonts}/DINPro-Light.eot');
+	src: url('#{$path-to-fonts}/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/DINPro-Light.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/DINPro-Light.woff') format('woff'),
+			 url('#{$path-to-fonts}/DINPro-Light.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/DINPro-Light.svg#DINPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('#{$path-to-fonts}/DINPro-Regular.eot');
+	src: url('#{$path-to-fonts}/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/DINPro-Regular.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/DINPro-Regular.woff') format('woff'),
+			 url('#{$path-to-fonts}/DINPro-Regular.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/DINPro-Regular.svg#DINPro-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('#{$path-to-fonts}/DINPro-Medium.eot');
+	src: url('#{$path-to-fonts}/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/DINPro-Medium.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/DINPro-Medium.woff') format('woff'),
+			 url('#{$path-to-fonts}/DINPro-Medium.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/DINPro-Medium.svg#DINPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('#{$path-to-fonts}/DINPro-Bold.eot');
+	src: url('#{$path-to-fonts}/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/DINPro-Bold.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/DINPro-Bold.woff') format('woff'),
+			 url('#{$path-to-fonts}/DINPro-Bold.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/DINPro-Bold.svg#DINPro-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('#{$path-to-fonts}/DINPro-Black.eot');
+	src: url('#{$path-to-fonts}/DINPro-Black.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/DINPro-Black.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/DINPro-Black.woff') format('woff'),
+			 url('#{$path-to-fonts}/DINPro-Black.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/DINPro-Black.svg#DINPro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}

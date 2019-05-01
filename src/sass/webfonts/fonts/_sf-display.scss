@@ -1,0 +1,89 @@
+// @font-face {
+// 	font-family: 'SF Display';
+// 	src: url('#{$path-to-legacy-fonts}/sfuidisplay-ultralight-webfont.woff2') format('woff2'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-ultralight-webfont.woff') format('woff'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-ultralight-webfont.ttf') format('truetype'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-ultralight-webfont.svg#sf_ui_displayultralight') format('svg');
+// 	font-weight: 100;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'SF Display';
+// 	src: url('#{$path-to-legacy-fonts}/sfuidisplay-thin-webfont.woff2') format('woff2'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-thin-webfont.woff') format('woff'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-thin-webfont.ttf') format('truetype'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-thin-webfont.svg#sf_ui_displaythin') format('svg');
+// 	font-weight: 200;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$path-to-legacy-fonts}/sfuidisplay-light-webfont.woff2') format('woff2'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-light-webfont.woff') format('woff'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-light-webfont.ttf') format('truetype'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-light-webfont.svg#sf_ui_displaylight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$path-to-legacy-fonts}/sfuidisplay-regular-webfont.woff2') format('woff2'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-regular-webfont.woff') format('woff'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-regular-webfont.ttf') format('truetype'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-regular-webfont.svg#sf_ui_displayregular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$path-to-legacy-fonts}/sfuidisplay-medium-webfont.woff2') format('woff2'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-medium-webfont.woff') format('woff'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-medium-webfont.ttf') format('truetype'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-medium-webfont.svg#sf_ui_displaymedium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+// @font-face {
+// 	font-family: 'SF Display';
+// 	src: url('#{$path-to-legacy-fonts}/sfuidisplay-semibold-webfont.woff2') format('woff2'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-semibold-webfont.woff') format('woff'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-semibold-webfont.ttf') format('truetype'),
+// 		 url('#{$path-to-legacy-fonts}/sfuidisplay-semibold-webfont.svg#sf_ui_displaysemibold') format('svg');
+// 	font-weight: 600;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$path-to-legacy-fonts}/sfuidisplay-bold-webfont.woff2') format('woff2'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-bold-webfont.woff') format('woff'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-bold-webfont.ttf') format('truetype'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-bold-webfont.svg#sf_ui_displaybold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$path-to-legacy-fonts}/sfuidisplay-heavy-webfont.woff2') format('woff2'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-heavy-webfont.woff') format('woff'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-heavy-webfont.ttf') format('truetype'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-heavy-webfont.svg#sf_ui_displayheavy') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$path-to-legacy-fonts}/sfuidisplay-black-webfont.woff2') format('woff2'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-black-webfont.woff') format('woff'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-black-webfont.ttf') format('truetype'),
+		 url('#{$path-to-legacy-fonts}/sfuidisplay-black-webfont.svg#sf_ui_displayblack') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}

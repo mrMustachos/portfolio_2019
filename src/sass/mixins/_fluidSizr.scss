@@ -1,0 +1,47 @@
+// https://css-tricks.com/snippets/css/fluid-typography/
+
+// Usage:
+// @include fluid-sizr($name, $min_width, $max_width, $min_font, $max_font);
+
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-sizr($name, $min-vw, $max-vw, $min-font-size, $max-font-size) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+	$sizrMath: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			#{$name}: $min-font-size;
+			@media screen and (min-width: $min-vw) {
+				#{$name}: $sizrMath;
+			}
+			@media screen and (min-width: $max-vw) {
+				#{$name}: $max-font-size;
+			}
+		}
+	}
+}
+
+@mixin fluid-sizr-open($name, $min-vw, $max-vw, $min-font-size, $max-font-size) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+	$sizrMath: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			@media screen and (min-width: $min-vw) {
+				#{$name}: $sizrMath;
+			}
+			@media screen and (min-width: $max-vw) {
+				#{$name}: $max-font-size;
+			}
+		}
+	}
+}

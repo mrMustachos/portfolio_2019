@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-Book.eot');
+	src: url('#{$path-to-fonts}/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-Book.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-Book.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-Book.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-Book.svg#CircularStd-Book') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-BookItalic.eot');
+	src: url('#{$path-to-fonts}/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-BookItalic.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-BookItalic.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-BookItalic.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-BookItalic.svg#CircularStd-BookItalic') format('svg');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-Medium.eot');
+	src: url('#{$path-to-fonts}/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-Medium.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-Medium.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-Medium.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-Medium.svg#CircularStd-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-MediumItalic.eot');
+	src: url('#{$path-to-fonts}/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-MediumItalic.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-MediumItalic.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-MediumItalic.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-MediumItalic.svg#CircularStd-MediumItalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-Bold.eot');
+	src: url('#{$path-to-fonts}/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-Bold.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-Bold.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-Bold.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-Bold.svg#CircularStd-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-BoldItalic.eot');
+	src: url('#{$path-to-fonts}/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-BoldItalic.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-BoldItalic.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-BoldItalic.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-BoldItalic.svg#CircularStd-BoldItalic') format('svg');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-Black.eot');
+	src: url('#{$path-to-fonts}/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-Black.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-Black.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-Black.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-Black.svg#CircularStd-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('#{$path-to-fonts}/CircularStd-BlackItalic.eot');
+	src: url('#{$path-to-fonts}/CircularStd-BlackItalic.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/CircularStd-BlackItalic.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/CircularStd-BlackItalic.woff') format('woff'),
+			 url('#{$path-to-fonts}/CircularStd-BlackItalic.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/CircularStd-BlackItalic.svg#CircularStd-BlackItalic') format('svg');
+	font-weight: 900;
+	font-style: italic;
+}
+

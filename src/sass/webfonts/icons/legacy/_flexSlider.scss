@@ -1,0 +1,12 @@
+@import "_variables.scss";
+
+@font-face {
+	font-family: 'flexslider-icon';
+	src: url('#{$path-to-flex}/flexslider-icon.eot');
+	src: url('#{$path-to-flex}/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		 url('#{$path-to-flex}/flexslider-icon.woff') format('woff'),
+		 url('#{$path-to-flex}/flexslider-icon.ttf') format('truetype'),
+		 url('#{$path-to-flex}/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

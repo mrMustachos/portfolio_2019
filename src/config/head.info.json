@@ -1,0 +1,29 @@
+{
+  "meta": [
+    {
+      "charset": "utf-8"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+    }
+  ],
+  "meta_2": [
+    {
+      "name": "description",
+      "content": "Portfolio website for Bill Domanick"
+    },
+    {
+      "name": "robots",
+      "content": "index,follow"
+    },
+    {
+      "name": "googlebot",
+      "content": "index,follow"
+    },
+    {
+      "name": "google",
+      "content": "nositelinkssearchbox"
+    }
+  ]
+}

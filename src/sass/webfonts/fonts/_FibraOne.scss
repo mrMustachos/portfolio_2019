@@ -1,0 +1,192 @@
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-Thin.eot');
+	src: url('#{$path-to-fonts}/FibraOne-Thin.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-Thin.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-Thin.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-Thin.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-Thin.svg#FibraOne-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-ThinIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-ThinIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-ThinIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-ThinIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-ThinIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-ThinIt.svg#FibraOne-ThinIt') format('svg');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-UltraLight.eot');
+	src: url('#{$path-to-fonts}/FibraOne-UltraLight.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLight.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLight.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLight.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLight.svg#FibraOne-UltraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-UltraLightIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-UltraLightIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLightIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLightIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLightIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraLightIt.svg#FibraOne-UltraLightIt') format('svg');
+	font-weight: 200;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-Light.eot');
+	src: url('#{$path-to-fonts}/FibraOne-Light.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-Light.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-Light.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-Light.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-Light.svg#FibraOne-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-LightIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-LightIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-LightIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-LightIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-LightIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-LightIt.svg#FibraOne-LightIt') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-Regular.eot');
+	src: url('#{$path-to-fonts}/FibraOne-Regular.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-Regular.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-Regular.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-Regular.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-Regular.svg#FibraOne-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-RegularIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-RegularIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-RegularIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-RegularIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-RegularIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-RegularIt.svg#FibraOne-RegularIt') format('svg');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-SemiBold.eot');
+	src: url('#{$path-to-fonts}/FibraOne-SemiBold.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBold.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBold.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBold.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBold.svg#FibraOne-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-SemiBoldIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-SemiBoldIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBoldIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBoldIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBoldIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-SemiBoldIt.svg#FibraOne-SemiBoldIt') format('svg');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-Bold.eot');
+	src: url('#{$path-to-fonts}/FibraOne-Bold.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-Bold.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-Bold.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-Bold.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-Bold.svg#FibraOne-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-BoldIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-BoldIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-BoldIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-BoldIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-BoldIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-BoldIt.svg#FibraOne-BoldIt') format('svg');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-UltraBold.eot');
+	src: url('#{$path-to-fonts}/FibraOne-UltraBold.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBold.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBold.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBold.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBold.svg#FibraOne-UltraBold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-UltraBoldIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-UltraBoldIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBoldIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBoldIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBoldIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-UltraBoldIt.svg#FibraOne-UltraBoldIt') format('svg');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-Heavy.eot');
+	src: url('#{$path-to-fonts}/FibraOne-Heavy.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-Heavy.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-Heavy.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-Heavy.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-Heavy.svg#FibraOne-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fibra One';
+	src: url('#{$path-to-fonts}/FibraOne-HeavyIt.eot');
+	src: url('#{$path-to-fonts}/FibraOne-HeavyIt.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path-to-fonts}/FibraOne-HeavyIt.woff2') format('woff2'),
+			 url('#{$path-to-fonts}/FibraOne-HeavyIt.woff') format('woff'),
+			 url('#{$path-to-fonts}/FibraOne-HeavyIt.ttf') format('truetype'),
+			 url('#{$path-to-fonts}/FibraOne-HeavyIt.svg#FibraOne-HeavyIt') format('svg');
+	font-weight: 900;
+	font-style: italic;
+}

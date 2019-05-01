@@ -1,0 +1,203 @@
+/*! waffle-grid v1.3.5 | MIT License | https://lucasgruwez.github.io/waffle-grid */
+
+// Class names
+// Change them to whatever you're used to
+$grid-classname: "grid" !default;
+$row-classname: "row" !default;
+$column-classname: "col" !default;
+$column_m-classname: "colm" !default;
+
+// Column amounts, results in:
+// .col-n-of-4, or .col-n-of-6
+$grid-columns: (4, 5, 6, 8) !default;
+
+// Gutter width
+$gutter-width: 20px !default;
+
+// Grid width and max-width.
+// It is automatically centered on the page.
+$grid-width: 1400px !default;
+$grid-max-width: 90% !default;
+
+// Pushes and Pulls
+$pushes: true !default;
+$pulls: true !default;
+$centers: true !default;
+
+// Breakpoints. Structure:
+// name: (screen-width, column-amounts)
+$breakpoints: (
+	s: (480px, (4, 5, 6, 8)),
+	m: (700px, (4, 5, 6, 8, 10, 12)),
+	l: (1000px, (4, 5, 6, 8, 10, 12, 16)),
+) !default;
+
+
+// Actual css, change this at your own risk
+.#{$grid-classname} {
+	display: flex;
+	flex-direction: column;
+	width: $grid-width;
+	max-width: $grid-max-width; // 1440px * 0.9 = 1296px
+	margin: 0 auto;
+
+	&.full_width {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.#{$row-classname} {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.#{$column_m-classname} {
+	box-sizing: border-box;
+	margin: 0 #{$gutter-width / 2};
+	vertical-align: top;
+
+	&.gutter_full {
+		margin: #{$gutter-width / 2};
+	}
+}
+
+.#{$column-classname} {
+	box-sizing: border-box;
+	vertical-align: top;
+
+	&.gutter {
+		padding: 0 #{$gutter-width / 2};
+	}
+
+	&.gutter_full {
+		padding: #{$gutter-width / 2};
+	}
+}
+
+.w_auto { flex: 1 }
+
+@each $col-am in $grid-columns {
+	@for $i from 1 through $col-am {
+
+		.#{$column_m-classname}-#{$i}-of-#{$col-am} {
+			width: calc(#{percentage($i/$col-am)} - #{$gutter-width});
+		}
+
+		.#{$column-classname}-#{$i}-of-#{$col-am} {
+			width: #{percentage($i/$col-am)};
+		}
+
+		@if ($pushes) {
+			.#{$column_m-classname} {
+				&.push-#{$i}-of-#{$col-am} {
+					margin-left: calc(#{percentage($i/$col-am)} + #{$gutter-width / 2});
+				}
+			}
+
+			.#{$column-classname} {
+				&.push-#{$i}-of-#{$col-am} {
+					margin-left: #{percentage($i/$col-am)};
+				}
+			}
+		}
+
+		@if ($pulls) {
+			.#{$column_m-classname} {
+				&.puull-#{$i}-of-#{$col-am} {
+					margin-right: calc(#{percentage($i/$col-am)} + #{$gutter-width / 2});
+				}
+			}
+
+			.#{$column-classname} {
+				&.pull-#{$i}-of-#{$col-am} {
+					margin-right: #{percentage($i/$col-am)};
+				}
+			}
+		}
+	}
+}
+
+@each $bp in $breakpoints {
+	$bp-name: nth($bp, 1);
+	$bp-width: nth(nth($bp, 2), 1);
+	$bp-col-ams: nth(nth($bp, 2), 2);
+
+	@media (min-width: $bp-width) {
+		.#{$bp-name}-hide { display: none; }
+		.w-#{$bp-name}-auto { flex: 1; }
+		.#{$column_m-classname}.#{$bp-name}-un-push { margin-left: #{$gutter-width / 2}; }
+		.#{$column_m-classname}.#{$bp-name}-un-pull { margin-right: #{$gutter-width / 2}; }
+		.#{$column-classname}.#{$bp-name}-un-push { margin-left: 0; }
+		.#{$column-classname}.#{$bp-name}-un-pull { margin-right: 0; }
+
+		@each $col-am in $bp-col-ams {
+			@for $i from 1 through $col-am {
+
+				.#{$column_m-classname}-#{$bp-name}-#{$i}-of-#{$col-am} {
+					width: calc(#{percentage($i/$col-am)} - #{$gutter-width});
+				}
+
+				.#{$column-classname}-#{$bp-name}-#{$i}-of-#{$col-am} {
+					width: #{percentage($i/$col-am)};
+				}
+
+				@if ($pushes) {
+					.#{$column_m-classname} {
+						&.push-#{$bp-name}-#{$i}-of-#{$col-am} {
+							margin-left: calc(#{percentage($i/$col-am)} + #{$gutter-width / 2});
+						}
+					}
+
+					.#{$column-classname} {
+						&.push-#{$bp-name}-#{$i}-of-#{$col-am} {
+							margin-left: #{percentage($i/$col-am)};
+						}
+					}
+				}
+
+				@if ($pulls) {
+					.#{$column_m-classname} {
+						&.pull-#{$bp-name}-#{$i}-of-#{$col-am} {
+							margin-right: calc(#{percentage($i/$col-am)} + #{$gutter-width / 2});
+						}
+					}
+
+					.#{$column-classname} {
+						&.pull-#{$bp-name}-#{$i}-of-#{$col-am} {
+							margin-right: #{percentage($i/$col-am)};
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@function reverse($list, $recursive: false) {
+	$result: ();
+	@for $i from length($list)*-1 through -1 {
+
+		@if type-of(nth($list, abs($i))) == list and $recursive {
+			$result: append($result, reverse(nth($list, abs($i)), $recursive));
+		}
+
+		@else {
+			$result: append($result, nth($list, abs($i)));
+		}
+	}
+	@return $result;
+}
+
+@each $bp in reverse($breakpoints) {
+	$bp-name: nth($bp, 1);
+	$bp-width: nth(nth($bp, 2), 1);
+
+	@media (max-width: $bp-width) {
+		.#{$bp-name}-and-higher { display: none; }
+	}
+}
+
+// under 160 lines !!

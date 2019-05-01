@@ -1,0 +1,11 @@
+// html { box-sizing: border-box; }
+
+// *, *:before, *:after {
+// 	box-sizing: inherit;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+// @import "_baseStyle.scss";
+@import "legacy/_legacyIndex.scss";
+// @import "components/slidescroll/_index.scss";

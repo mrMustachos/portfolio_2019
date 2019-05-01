@@ -1,0 +1,42 @@
+{
+  "name": "portfolio_2019",
+  "version": "1.0.0",
+  "description": "Portfolio website for Bill Domanick",
+  "main": "src/*.html",
+  "scripts": {
+    "server": "parcel src/*.html --open",
+    "deploy": "parcel build src/*.html",
+    "clean": "node ./src/config/npm/clean.js",
+    "dev": "npm run clean && npm run server",
+    "build": "npm run clean && npm run deploy"
+  },
+  "author": "mrMustachos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrMustachos/portfolio_2019.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "fs-extra": "^7.0.1",
+    "node-sass": "^4.11.0",
+    "node-sass-package-importer": "^5.3.1",
+    "parcel-bundler": "^1.12.3",
+    "posthtml": "^0.11.3",
+    "posthtml-favicons": "^1.2.0",
+    "posthtml-head-elements": "^0.5.0",
+    "posthtml-include": "^1.2.0",
+    "posthtml-spaceless": "0.0.3"
+  },
+  "dependencies": {
+    "bezier-easing": "^2.1.0",
+    "flickity": "^2.2.0",
+    "gsap": "^2.1.2",
+    "imagesloaded": "^4.1.4",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "scrollmagic": "^2.0.6"
+  }
+}

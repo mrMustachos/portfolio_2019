@@ -1,0 +1,56 @@
+
+//----------------------------------*\
+// VARIABLES
+//----------------------------------*/
+
+// $path-to-icons: "../webfonts/icons";
+// $path-to-fonts: "../webfonts/fonts";
+
+$path-to-legacy-icons: "/webfonts/icons/legacy";
+$path-to-legacy-fonts: "/webfonts/fonts/legacy";
+
+// $BrandonGrotesque: 'Brandon Grotesque', Helvetica, Helvetica Neue, Arial, sans-serif;
+// $CircularStd: 'Circular Std', Helvetica, Helvetica Neue, Arial, sans-serif;
+// $MarketSquare: 'Market Square Rounded', Helvetica, Helvetica Neue, Arial, sans-serif;
+
+// $FibraOne: 'Fibra One', Helvetica, Helvetica Neue, Arial, sans-serif;
+// $sfCompact: 'SF Compact Text', Helvetica, Helvetica Neue, Arial, sans-serif;
+// $din: 'DINPro', Helvetica, Helvetica Neue, Arial, sans-serif;
+
+
+//----------------------------------*\
+// ICONS
+//----------------------------------*/
+
+// @import "icons/fontawesome.scss";
+// @import "icons/light.scss";
+// @import "icons/brands.scss";
+// @import "icons/regular.scss";
+// @import "icons/solid.scss";
+
+//----------------------------------*\
+// FONTS
+//----------------------------------*/
+
+// @import "fonts/_DINPro.scss";
+// @import "fonts/_SFCompactText.scss";
+// @import "fonts/_FibraOne.scss";
+
+// @import "fonts/_BrandonGrotesque.scss";
+// @import "fonts/_CircularStd.scss";
+// @import "fonts/_MarketSquareRounded.scss";
+
+
+//----------------------------------*\
+// LEGACY ICONS
+//----------------------------------*/
+
+@import "icons/legacy/_icons.scss";
+@import "icons/legacy/_flexSlider.scss";
+
+//----------------------------------*\
+// LEGACY FONTS
+//----------------------------------*/
+
+@import "fonts/_sf-display.scss";
+@import "fonts/_sf-text.scss";

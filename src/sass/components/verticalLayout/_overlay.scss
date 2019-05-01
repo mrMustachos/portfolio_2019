@@ -1,0 +1,39 @@
+body {
+	&.view {
+		background-image: linear-gradient(rgba(200, 50, 50, .25) 1px, transparent 1px);
+		background-size: 1px $baseline;
+		background-color: rgba($accent_color, .45);
+
+		// #hero_image_play, #about, #contact {
+		#hero_image_play, #skills, #contact, #project_w, #project_d {
+			background: rgba($white, .45);
+		}
+
+		#skills {
+			background: rgba(red, .15);
+		}
+
+		#nav {
+			.nav_bg {
+				// background: rgba($accent_color, .45);
+				background: rgba(red, .15);
+			}
+		}
+
+		// #skills, #works {
+		#works {
+			background: rgba($section_color, .45);
+		}
+	}
+}
+
+.viewer {
+	display: inline-block;
+	background: #f2f2f2;
+	padding: 0 10px;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}

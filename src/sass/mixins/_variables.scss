@@ -1,0 +1,154 @@
+
+///////////////////////////////////////////////////////////////////
+// Font Faces /////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+$font_path: '../fonts/';
+$base_folder:'sf_text';
+$header_folder:'sf_display';
+$icons_folder:'icons';
+$base_font_size: 16;
+
+$base_font: 'SF Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$header_font: 'SF Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$script_font: 'Droid Serif', Georgia, serif;
+$code_font: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+
+///////////////////////////////////////////////////////////////////
+// Colors /////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+$hover_color: #d81b77;
+$accent_color: #FCF9BA;
+$main_color: #283044;
+$white: #ffffff;
+
+$main_desaturated1: desaturate($main_color, 10%);
+$main_desaturated2: desaturate($main_color, 20%);
+
+$section_header: lighten($main_desaturated1, 10%);
+$section_sub_header: lighten($main_desaturated2, 30%);
+$section_color: lighten($main_desaturated2, 65%);
+
+$nav_color: lighten($main_desaturated2, 50%);
+$nav_active: $section_sub_header;
+
+///////////////////////////////////////////////////////////////////
+// Mixins /////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+// REM > PX
+@function calculatePx($rem_size) {
+	$pxSize: #{strip-unit($rem_size * $base_font_size)};
+	@return #{$pxSize}px;
+}
+
+// PX > REM
+@function calculateRem($px_size) {
+	$remSize: #{strip-unit($px_size / $base_font_size)};
+	@return #{$remSize}rem;
+}
+
+// @mixin font-size($rem_size) {
+// 	font-size: calculatePx($rem_size);
+// 	font-size: $rem_size;
+// } // USE: @include font-size(14px);
+
+
+
+@mixin px_flip($properties, $rem_size) {
+	@each $property in $properties {
+		#{$property}: calculatePx($rem_size);
+	}
+}
+
+@mixin rem_flip($properties, $px_size) {
+	@each $property in $properties {
+		#{$property}: calculateRem($px_size);
+		#{$property}: $px_size;
+	}
+}
+
+
+@mixin vert_align {
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+@mixin horz_align {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+@mixin centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@mixin box {
+	box-sizing: border-box;
+}
+
+@mixin cf {
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+///////////////////////////////////////////////////////////////////
+// Breakpoints ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+$min_size: 320px;
+$medium_size: 480px;
+$large_size: 800px;
+
+@mixin min_bpSize_straight($px_size) {
+	@media only screen and (min-width: $px_size) {
+		@content;
+	}
+}
+
+@mixin min_bpSize($px_size) {
+	@media only screen and (min-width: calculateRem($px_size)) {
+		@content;
+	}
+}
+
+@mixin max_bpSize($px_size) {
+	@media only screen and (max-width: calculateRem($px_size)) {
+		@content;
+	}
+}
+
+	// @include font-size(14px);
+
+///////////////////////////////////////////////////////////////////
+// Vertical Grid Variables ////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+// http://codepen.io/MadeByMike/pen/bEEGvv?editors%3D0100
+
+$baseline: 1.5rem;
+
+// $minScreen: 20rem;
+// $maxScreen: 77.5rem;
+
+$minScreen: 30rem;
+$maxScreen: 50rem;
+$minFont: .875rem;
+$maxFont: 1.25rem;
+
+$h1: 2rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1rem;
+$h5: .875rem;
+
+$lead_h1: 5rem;

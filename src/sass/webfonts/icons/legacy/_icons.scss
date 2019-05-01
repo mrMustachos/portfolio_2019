@@ -1,0 +1,90 @@
+@import "_variables.scss";
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('#{$path-to-moo}/icomoon.eot?fdxzlp');
+	src: url('#{$path-to-moo}/icomoon.eot?fdxzlp#iefix') format('embedded-opentype'),
+		 url('#{$path-to-moo}/icomoon.ttf?fdxzlp') format('truetype'),
+		 url('#{$path-to-moo}/icomoon.woff?fdxzlp') format('woff'),
+		 url('#{$path-to-moo}/icomoon.svg?fdxzlp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon_arrow_down {
+	&:before {
+		content: $icon_arrow_down;
+	}
+}
+.icon_arrow_left {
+	&:before {
+		content: $icon_arrow_left;
+	}
+}
+.icon_arrow_right {
+	&:before {
+		content: $icon_arrow_right;
+	}
+}
+.icon_branding {
+	&:before {
+		content: $icon_branding;
+	}
+}
+.icon_design {
+	&:before {
+		content: $icon_design;
+	}
+}
+.icon_development {
+	&:before {
+		content: $icon_development;
+	}
+}
+.icon_email {
+	&:before {
+		content: $icon_email;
+	}
+}
+.icon_github {
+	&:before {
+		content: $icon_github;
+	}
+}
+.icon_jsfiddle {
+	&:before {
+		content: $icon_jsfiddle;
+	}
+}
+.icon_linkedIn {
+	&:before {
+		content: $icon_linkedIn;
+	}
+}
+.icon_phish {
+	&:before {
+		content: $icon_phish;
+	}
+}
+.icon_resume {
+	&:before {
+		content: $icon_resume;
+	}
+}
+.icon_soundcloud {
+	&:before {
+		content: $icon_soundcloud;
+	}
+}
