@@ -24,7 +24,9 @@ export default function() {
 		$(window).resize(() => flipper());
 
 		$(document).on('click', '.menu-icon, .menu__link', function(e) {
-			menu.reversed() ? menu.play() : menu.reverse();
+			if ($(window).width() <= 800) {
+				menu.reversed() ? menu.play() : menu.reverse();
+			}
 		});
 
 	});
